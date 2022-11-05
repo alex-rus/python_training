@@ -1,1 +1,1 @@
-# python_training
+# Repository for Python training B34 - 2022
