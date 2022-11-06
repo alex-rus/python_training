@@ -12,12 +12,12 @@ def app(request):
 
 
 def test_add_group(app):
-    app.login(username="admin", password="secret")
+    app.session.login(username="admin", password="secret")
     app.create_group(Group(name="Fixture_group", header="Fixture_group_header_logo", footer="Fixture_group_comment"))
-    app.logout()
+    app.session.logout()
 
 
 def test_add_empty_group(app):
-    app.login(username="admin", password="secret")
+    app.session.login(username="admin", password="secret")
     app.create_group(Group(name="Fixture_empty", header="", footer=""))
-    app.logout()
+    app.session.logout()
