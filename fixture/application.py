@@ -1,6 +1,3 @@
-import unittest
-import pytest
-from group import Group
 from selenium import webdriver
 
 class Application:
